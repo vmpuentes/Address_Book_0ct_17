@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using CarDealership.Models;
+using AddressBook.Models;
 
 namespace AddressBook.Controllers
 {
@@ -23,7 +23,7 @@ namespace AddressBook.Controllers
         [HttpPost("/addressbook/user")]
         public ActionResult ContactUser()
         {
-          Car.ClearAll();
+          Contact.ClearAll();
           return View();
         }
 
