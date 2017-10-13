@@ -11,45 +11,42 @@ namespace AddressBook.Models
 
     private static List<Contacts> _contactList = new List<Contact> {};
 
-    public Car (string name, string _address, int _phonenumber)
+    public Car (string name, string address, int phonenumber)
     {
        _name = name;
-       _addres = addres;
+       _addres = address;
        _phonenumber = phonenumber;
     }
 
-    public void SetName(string newName)
+
+    public string GetName()
+    {
+      return _name;
+    }
+
+    public void GetName(string newName)
     {
       _name = newName;
     }
 
-    public string GetName()
+    public string GetPhoneNumber()
     {
       return _newName;
     }
 
     public void SetPhoneNumber(int newPhoneNumber)
     {
-      // if (newP >= 0) {
-      //   _price = newPrice;
-      // }
-      // else {
-      //   Console.WriteLine("The price for this item is not valid.");
-      // }
+      _phoneNumber = _newphonenumber;
     }
 
-    public int GetPhoneNumber()
+    public int GetAddress()
     {
-      return _phonenumber;
+      return _address;
     }
 
     public void SetAddress(int newAddress)
     {
       _address = newAddress;
-    }
-    public int GetAddress()
-    {
-      return _address;
     }
 
     public void Save()
@@ -65,11 +62,6 @@ namespace AddressBook.Models
     public static void ClearAll()
     {
       _contactList = new List<Contacts> {};
-    }
-
-    public bool MaxPrice(int maximumPossiblePrice)
-    {
-    
     }
   }
 }
