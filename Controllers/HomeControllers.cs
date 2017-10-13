@@ -13,29 +13,29 @@ namespace AddressBook.Controllers
             return View();
         }
 
-        [Route("/addresbBook")]
-        public ActionResult Cars()
+        [Route("/addresbook")]
+        public ActionResult Contacts()
         {
-          List<Car> allCars = Car.GetAll();
-          return View(allCars);
+          List<Contacts> allContacts = Contacts.GetAll();
+          return View(allContacts);
         }
 
         [HttpPost("/addressbook/user")]
-        public ActionResult CarsUser()
+        public ActionResult ContactUser()
         {
           Car.ClearAll();
           return View();
         }
 
         [HttpPost("/addressbook/create")]
-        public ActionResult CarsCreate()
+        public ActionResult ContactCreate()
         {
-          Car newCar = new Car (Request.Form["new-contact"],
+          Contacts newCar = new Contacts (Request.Form["new-contact"],
             int.Parse(Request.Form["new-car-phonenumber"]),
             int.Parse(Request.Form["new-address"])
           );
-          newCar.Save();
-          return View(newCar);
+          newContact.Save();
+          return View(newContact);
         }
     }
 }
