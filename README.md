@@ -8,12 +8,14 @@
 
 _An address book to store contact information for people you know. .
 
-:
-
 
 | Behavior  | Input  | Output  |
 |---|---|---|
-|1.
+|1.User may enter a name of the contact they want to save. | Fred Hammond | Fred Hammond |
+|2. User may enter a phone number for the name entered | 206-777-5544 | 206-777-5544 |
+|3. User may enter an address for the name entered | 123 3rd ave. SW, Seattle, WA 98111 |
+|4. Users may click a Contact's name to go to a separate page to view its details. | User clicks on Fred | A new page opens with Fred's details. |
+|5.
 
 ## Getting Started
 
