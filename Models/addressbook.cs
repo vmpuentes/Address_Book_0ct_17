@@ -11,7 +11,7 @@ namespace AddressBook.Models
 
     private static List<Contacts> _contactList = new List<Contact> {};
 
-    public Car (string name, string address, int phonenumber)
+    public Contacts (string name, string address, int phonenumber)
     {
        _name = name;
        _addres = address;
