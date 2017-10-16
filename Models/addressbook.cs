@@ -14,10 +14,9 @@ namespace AddressBook.Models
     public Contacts (string name, string address, int phonenumber)
     {
        _name = name;
-       _addres = address;
+       _address = address;
        _phonenumber = phonenumber;
     }
-
 
     public string GetName()
     {
