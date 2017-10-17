@@ -1,0 +1,11 @@
+<h1>Contact</h1>
+<ul>
+  @foreach(string Contact in Model)
+  {
+    <li>@contact</li>
+  }
+</ul>
+<p><a href="/">Add another contact</a></p>
+<form action="/contact/create" method="post">
+  <button type="submit" name="button">Clear All Contacts</button>
+</form>
