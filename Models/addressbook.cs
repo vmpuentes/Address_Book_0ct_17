@@ -23,19 +23,19 @@ namespace AddressBook.Models
       return _name;
     }
 
-    public void GetName(string newName)
+    public void SetName(string newName)
     {
       _name = newName;
     }
 
     public string GetPhoneNumber()
     {
-      return _newName;
+      return _newPhoneNumber;
     }
 
     public void SetPhoneNumber(int newPhoneNumber)
     {
-      _phoneNumber = _newphonenumber;
+      _phoneNumber = _newPhoneNumber;
     }
 
     public int GetAddress()

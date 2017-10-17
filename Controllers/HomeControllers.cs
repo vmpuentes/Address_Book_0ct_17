@@ -12,7 +12,7 @@ namespace AddressBook.Controllers
             return View();
         }
 
-        [Route("/addresbook")]
+        [Route("/addressbook")]
         public ActionResult Contacts()
         {
           List<Contacts> allContacts = Contacts.GetAll();
