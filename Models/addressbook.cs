@@ -9,9 +9,9 @@ namespace AddressBook.Models
     private string _address;
     private int _phonenumber;
 
-    private static List<Contacts> _contactList = new List<Contact> {};
+    private static List<Contact> _contactList = new List<Contact> {};
 
-    public Contacts (string name, string address, int phonenumber)
+    public Contact (string name, string address, int phoneNumber)
     {
        _name = name;
        _address = address;

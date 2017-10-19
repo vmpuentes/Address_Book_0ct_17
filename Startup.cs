@@ -17,7 +17,7 @@ namespace AddressBook
 
         public IconfigurationRoot Configuration { get; }
 
-        public void ConfigurationServices (IServiceCollectionservices)
+        public void ConfigurationServices (IServiceCollectionServices)
 
         {
             services.AddMvc();
