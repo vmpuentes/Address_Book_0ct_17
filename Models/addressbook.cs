@@ -7,15 +7,15 @@ namespace AddressBook.Models
   {
     private string _name;
     private string _address;
-    private int _phonenumber;
+    private string _phoneNumber;
 
     private static List<Contact> _contactList = new List<Contact> {};
 
-    public Contact (string name, string address, int phoneNumber)
+    public Contact (string name, string address, string phoneNumber)
     {
        _name = name;
        _address = address;
-       _phonenumber = phonenumber;
+       _phoneNumber = phoneNumber;
     }
 
     public string GetName()
@@ -30,27 +30,27 @@ namespace AddressBook.Models
 
     public string GetPhoneNumber()
     {
-      return _newPhoneNumber;
+      return _phoneNumber;
     }
 
-    public void SetPhoneNumber(int newPhoneNumber)
+    public void SetPhoneNumber(string newPhoneNumber)
     {
-      _phoneNumber = _newPhoneNumber;
+      _phoneNumber = newPhoneNumber;
     }
 
-    public int GetAddress()
+    public string GetAddress()
     {
       return _address;
     }
 
-    public void SetAddress(int newAddress)
+    public void SetAddress(string newAddress)
     {
       _address = newAddress;
     }
 
     public void Save()
     {
-      _contacList.Add(this);
+      _contactList.Add(this);
     }
 
     public static List<Contact> GetAll()
@@ -60,7 +60,7 @@ namespace AddressBook.Models
 
     public static void ClearAll()
     {
-      _contactList = new List<Contacts> {};
+      _contactList = new List<Contact> {};
     }
   }
 }
