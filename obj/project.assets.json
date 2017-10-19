@@ -9523,11 +9523,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\swhit\\Desktop\\Adress_Book_Oct_17\\address_book.csproj",
+      "projectUniqueName": "C:\\Users\\swhit\\desktop\\Address_Book_0ct_17\\address_book.csproj",
       "projectName": "address_book",
-      "projectPath": "C:\\Users\\swhit\\Desktop\\Adress_Book_Oct_17\\address_book.csproj",
+      "projectPath": "C:\\Users\\swhit\\desktop\\Address_Book_0ct_17\\address_book.csproj",
       "packagesPath": "C:\\Users\\swhit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\swhit\\Desktop\\Adress_Book_Oct_17\\obj\\",
+      "outputPath": "C:\\Users\\swhit\\desktop\\Address_Book_0ct_17\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\swhit\\AppData\\Roaming\\NuGet\\NuGet.Config"

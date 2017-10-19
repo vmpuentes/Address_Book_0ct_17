@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuratoin;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AddressBook
@@ -15,9 +15,9 @@ namespace AddressBook
             Configuration = builder.Build();
         }
 
-        public IconfigurationRoot Configuration { get; }
+        public IConfigurationRoot Configuration { get; }
 
-        public void ConfigurationServices (IServiceCollectionServices)
+        public void ConfigurationServices(IServiceCollection services)
 
         {
             services.AddMvc();

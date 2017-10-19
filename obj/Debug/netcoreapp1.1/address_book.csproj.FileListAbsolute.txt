@@ -1,3 +1,6 @@
 C:\Users\swhit\Desktop\Adress_Book_Oct_17\obj\Debug\netcoreapp1.1\address_book.csproj.CoreCompileInputs.cache
 C:\Users\swhit\Desktop\Adress_Book_Oct_17\obj\Debug\netcoreapp1.1\address_book.AssemblyInfoInputs.cache
 C:\Users\swhit\Desktop\Adress_Book_Oct_17\obj\Debug\netcoreapp1.1\address_book.AssemblyInfo.cs
+C:\Users\swhit\desktop\Address_Book_0ct_17\obj\Debug\netcoreapp1.1\address_book.csproj.CoreCompileInputs.cache
+C:\Users\swhit\desktop\Address_Book_0ct_17\obj\Debug\netcoreapp1.1\address_book.AssemblyInfoInputs.cache
+C:\Users\swhit\desktop\Address_Book_0ct_17\obj\Debug\netcoreapp1.1\address_book.AssemblyInfo.cs
