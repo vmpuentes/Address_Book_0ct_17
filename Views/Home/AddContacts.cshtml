@@ -5,18 +5,23 @@
 <div class="jumbotron">
   <h1>Address Book User Form </h1>
 </div>
-<form action="/contact/list">
-  <label for="new-contact">Add a new contact</label>
-  <input id="new-contact" name="new-contact" type="text">
+<div class="container">
+  <form action="/AddContact" method="post">
+    <div class='form-group'>
+      <label for="contactName">Add full Name of contact</label>
+      <input id="contactName" name="contactName" class='form-control' type="text">
 
-  <label for="new-phone-number">Add contact's phone number</label>
-  <input id="new-phone-number" name="new-phone-number" type="text">
+      <label for="contactPhoneNumber">Add contact's phone number</label>
+      <input id="contactPhoneNumber" name="contactPhoneNumber" class='form-control' type="text">
 
-  <label for="new-address">Add contact's address</label>
-  <input id="new-address" name="new-address" type="text">
+      <label for="contactAddress">Add contact's address</label>
+      <input id="contactAddress" name="contactAddress" class='form-control' type="text">
 
-  <button type="submit">Submit</button>
-</form>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
 
 <h1>Contact List</h1>
 <ul>
