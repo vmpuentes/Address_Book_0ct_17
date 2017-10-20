@@ -12,26 +12,26 @@ namespace AddressBook.Controllers
             return View();
         }
 
-        [Route("/AddContacts")]
-        public ActionResult Contact()
+        [Route("/addressbook")]
+        public ActionResult AddContact()
         {
-          List<Contacts> allContacts = Contacts.GetAll();
-          return View(allContacts);
+          List<Contact> allContact = Contact.GetAll();
+          return View(allContact);
         }
 
-        [HttpPost("/addressbook/")]
-        public ActionResult ContactUser()
+        [HttpPost("/addressbook/user")]
+        public ActionResult ContactDetails()
         {
           Contact.ClearAll();
           return View();
         }
 
-        [HttpPost("/createcontact")]
+        [HttpPost("/addressbook/createcontact")]
         public ActionResult ContactCreate()
         {
           Contact newContact = new Contact (
             Request.Form["new-contact"],
-            (Request.Form["new-contact-phonenumber"]),
+            (Request.Form["new-contactPhoneNumber"]),
             (Request.Form["new-address"])
           );
           newContact.Save();

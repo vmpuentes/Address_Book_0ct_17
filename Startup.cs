@@ -10,15 +10,14 @@ namespace AddressBook
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
-              .SetBasePath(env.ContentRootPath)
-              .AddEnvironmentVariables();
+                .SetBasePath(env.ContentRootPath)
+                .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
 
         public IConfigurationRoot Configuration { get; }
 
-        public void ConfigurationServices(IServiceCollection services)
-
+        public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
         }
@@ -29,10 +28,10 @@ namespace AddressBook
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {
-              routes.MapRoute(
-                name: "default",
-                template: "{controller=Home}/{action=Index}/{id?}");
-      });
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
+        }
     }
-  }
 }

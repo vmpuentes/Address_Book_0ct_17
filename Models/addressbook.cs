@@ -4,53 +4,53 @@ namespace AddressBook.Models
 {
   public class Contact
   {
-    private string _contactName;
-    private string _phoneNumber;
-    private string _contactAddress;
-
-    private static List<Contact> _contactList = new List<Contact> {};
-
+    private string _name;
+    private string _phone;
+    private string _address;
+    private static List<Contact> _contactList = new List <Contact> {};
+    private int _id;
     public Contact (string contactName, string phoneNumber , string contactAddress)
     {
-       _contactName = contactName;
-        _phonenumber = phonenumber;
-       _contactAddress = contactAddress;
-
+       _name = contactName;
+       _phone = phoneNumber;
+       _address = contactAddress;
+       _contactList.Add(this);
+       _id = _contactList.Count;
     }
 
-    public string GetContactName()
+    public string GetName()
     {
       return _name;
     }
 
-    public void SetContactName(string newContactName)
+    public void SetName(string newName)
     {
-      _contactName = newContactName;
+      _name = newName;
     }
 
-    public string GetPhoneNumber()
+    public string GetPhone()
     {
-      return _newPhoneNumber;
+      return _phone;
     }
 
-    public void SetPhoneNumber(int newPhoneNumber)
+    public void SetPhone(string newPhone)
     {
-      _PhoneNumber = _newPhoneNumber;
+      _phone = _newPhone;
     }
 
-    public int GetContactAddress()
+    public string GetAddress()
     {
-      return _contactAddress;
+      return _address;
     }
 
-    public void SetContactAddress(int newContactAddress)
+    public void SetAddress(string newAddress)
     {
-      _contactAddress = newContactAddress;
+      _address = newAddress;
     }
 
     public void Save()
     {
-      _contacList.Add(this);
+      _contactList.Add(this);
     }
 
     public static List<Contact> GetAll()
@@ -60,7 +60,7 @@ namespace AddressBook.Models
 
     public static void ClearAll()
     {
-      _contactList = new List<Contact> {};
+      _contactList.Clear();
     }
   }
 }

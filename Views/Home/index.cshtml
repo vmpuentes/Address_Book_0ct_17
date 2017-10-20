@@ -1,13 +1,34 @@
-<h1>Address Book User Form </h1>
-<form action="/contact/list" method="post">
-  <label for="new-contact">Add a new contact</label>
-  <input id="new-contact" name="new-contact" type="text">
-
-  <label for="new-phone-number">Add contact's phone number</label>
-  <input id="new-phone-number" name="new-phone-number" type="text">
-
-  <label for="new-address">Add contact's address</label>
-  <input id="new-address" name="new-address" type="text">
-
-  <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+  <title>AddressBook</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Address Book User Form </h1>
+      <form action="/contacts" method="post">
+        <div class="row">
+        <div class="col-md-4">
+          <label for="new-contact">Add a new contact</label>
+          <input id="new-contact" name="new-contact" type="text">
+        </div>
+        <div class="col-md-4">
+          <label for="new-contactPhoneNumber">Add contact's phone number</label>
+          <input id="new-contactPhoneNumber" name="new-contactPhoneNumber" type="text">
+        </div>
+        <div class="col-md-4">
+          <label for="new-address">Add contact's address</label>
+          <input id="new-address" name="new-address" type="text">
+        </div>
+      </div>
+        <div class="row">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
