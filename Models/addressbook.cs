@@ -35,7 +35,7 @@ namespace AddressBook.Models
 
     public void SetPhone(string newPhone)
     {
-      _phone = _newPhone;
+      _phone = newPhone;
     }
 
     public string GetAddress()
