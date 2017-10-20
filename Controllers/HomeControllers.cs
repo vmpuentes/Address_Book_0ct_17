@@ -13,7 +13,7 @@ namespace AddressBook.Controllers
         }
 
         [Route("/addressbook")]
-        public ActionResult Contacts()
+        public ActionResult Contact()
         {
           List<Contacts> allContacts = Contacts.GetAll();
           return View(allContacts);
@@ -26,12 +26,13 @@ namespace AddressBook.Controllers
           return View();
         }
 
-        [HttpPost("/addressbook/create")]
+        [HttpPost("/addressbook/createcontact")]
         public ActionResult ContactCreate()
         {
-          Contacts newContact = new Contacts (Request.Form["new-contact"],
-            int.Parse(Request.Form["new-contact-phonenumber"]),
-            int.Parse(Request.Form["new-address"])
+          Contacts newContact = new Contacts (
+            Request.Form["new-contact"],
+            (Request.Form["new-contact-phonenumber"]),
+            (Request.Form["new-address"])
           );
           newContact.Save();
           return View(newContact);

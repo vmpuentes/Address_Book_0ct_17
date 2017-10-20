@@ -1,31 +1,32 @@
-using System;
 using System.Collections.Generic;
+using System;
 
 namespace AddressBook.Models
 {
   public class Contact
   {
-    private string _name;
-    private string _address;
-    private int _phonenumber;
+    private string _contactName;
+    private int _phoneNumber;
+    private string _contactAddress;
 
     private static List<Contact> _contactList = new List<Contact> {};
 
-    public Contact (string name, string address, int phoneNumber)
+    public Contact (string contactName, int phoneNumber , string contactAddress)
     {
-       _name = name;
-       _address = address;
-       _phonenumber = phonenumber;
+       _contactName = contactName;
+        _phonenumber = phonenumber;
+       _contactAddress = contactAddress;
+
     }
 
-    public string GetName()
+    public string GetContactName()
     {
       return _name;
     }
 
-    public void SetName(string newName)
+    public void SetContactName(string newContactName)
     {
-      _name = newName;
+      _contactName = newContactName;
     }
 
     public string GetPhoneNumber()
@@ -35,17 +36,17 @@ namespace AddressBook.Models
 
     public void SetPhoneNumber(int newPhoneNumber)
     {
-      _phoneNumber = _newPhoneNumber;
+      _PhoneNumber = _newPhoneNumber;
     }
 
-    public int GetAddress()
+    public int GetContactAddress()
     {
-      return _address;
+      return _contactAddress;
     }
 
-    public void SetAddress(int newAddress)
+    public void SetContactAddress(int newContactAddress)
     {
-      _address = newAddress;
+      _contactAddress = newContactAddress;
     }
 
     public void Save()
@@ -60,7 +61,7 @@ namespace AddressBook.Models
 
     public static void ClearAll()
     {
-      _contactList = new List<Contacts> {};
+      _contactList = new List<Contact> {};
     }
   }
 }
