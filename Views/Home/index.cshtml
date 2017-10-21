@@ -7,28 +7,27 @@
   <title>AddressBook</title>
 </head>
 <body>
+  <div class="jumbotron">
+    <h1>Address Book User Form </h1>
+    <img id="flowerbook" src="/img/52157165.jpeg">
+  </div>
   <div class="container">
-    <div class="jumbotron">
-      <h1>Address Book User Form </h1>
-      <form action="/contacts" method="post">
-        <div class="row">
-        <div class="col-md-4">
-          <label for="new-contact">Add a new contact</label>
+    <form action="/contacts" method="post">
+      <div class="row">
+          <label for="new-contact">Add a new contact</label><br>
           <input id="new-contact" name="new-contact" type="text">
-        </div>
-        <div class="col-md-4">
-          <label for="new-contactPhoneNumber">Add contact's phone number</label>
-          <input id="new-contactPhoneNumber" name="new-contactPhoneNumber" type="text">
-        </div>
-        <div class="col-md-4">
-          <label for="new-address">Add contact's address</label>
-          <input id="new-address" name="new-address" type="text">
-        </div>
       </div>
-        <div class="row">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
+      <div class="row">
+          <label for="new-contactPhoneNumber">Add contact's phone number</label><br>
+          <input id="new-contactPhoneNumber" name="new-contactPhoneNumber" type="text">
+      </div>
+      <div class="row"
+          <label for="new-address">Add contact's address</label><br>
+          <input id="new-address" name="new-address" type="text">
+      </div>
+      <div class="row"><br>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </div>
 </body>
