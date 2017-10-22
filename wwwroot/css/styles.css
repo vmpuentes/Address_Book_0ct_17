@@ -1,15 +1,11 @@
-.jumbotron {
-  color: blue;
-  background-image: url("...wwwroot/img/52157165.jpeg");
-}
-
 h1 {
-  text-align: center;
+  float: right;
   font-weight: bold;
-  color: blue;
+  color: red;
 }
 
-#flowerbook {
-  text-align: center;
+.jumbotron {
+  color: red;
+  background-image: url("...wwwroot/img/52157165.jpeg");
   background-position: center;
 }

@@ -9,25 +9,25 @@ namespace AddressBook.Controllers
         [Route("/")]
         public ActionResult Index()
         {
-            return View();
+            List<Contact> allContacts = Contact.GetAll();
+            return View(allContacts);
         }
 
-        [Route("/addressbook")]
-        public ActionResult AddContact()
-        {
-          List<Contact> allContact = Contact.GetAll();
-          return View(allContact);
-        }
-
-        [HttpPost("/addressbook/user")]
+        [Route("/contact/ContactDetails")]
         public ActionResult ContactDetails()
+        {
+          return View();
+        }
+
+        [HttpPost("/contact/ClearContacts")]
+        public ActionResult ClearContacts()
         {
           Contact.ClearAll();
           return View();
         }
 
-        [HttpPost("/addressbook/createcontact")]
-        public ActionResult ContactCreate()
+        [HttpPost("/contact/CreateContact")]
+        public ActionResult CreateContact()
         {
           Contact newContact = new Contact (
             Request.Form["new-contact"],

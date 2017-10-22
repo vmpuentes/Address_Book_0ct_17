@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <title>AddressBook</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-  </head>
-  <body>
-    <h1>Fill in your contact details here!</h1>
-    <form action='/contact_details' mthod="post">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+  <title>AddressBook</title>
+</head>
+    <h1>Here are your contact details!</h1>
+      <ul>
+        <li>@Model.GetName()</li>
+        <li>@Model.GetPhoneNumber()</li>
+        <li>@Model.GetAddress()</li>
+      </ul>
+      <a href='/contact'
+    <form action='/ContactDetails' method="post">
       <div class='form-group'>
         <label for='contactName'>Contact name</label>
         <input id='contactName' name='contactName' class='form-control' type='text'>
