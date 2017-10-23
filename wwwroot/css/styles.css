@@ -1,11 +1,13 @@
-h1 {
-  float: right;
-  font-weight: bold;
-  color: red;
-}
-
 .jumbotron {
   color: red;
   background-image: url("...wwwroot/img/52157165.jpeg");
   background-position: center;
+  background-origin: border-box;
+  background-repeat: round;
+}
+
+h1 {
+  float: right;
+  font-weight: bold;
+  color: blue;
 }

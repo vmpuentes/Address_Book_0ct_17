@@ -13,10 +13,11 @@ namespace AddressBook.Controllers
             return View(allContacts);
         }
 
-        [Route("/contact/ContactDetails")]
-        public ActionResult ContactDetails()
+        [Route("/contact/{id}")]
+        public ActionResult ContactDetails(int id)
         {
-          return View();
+          Contact contact = Contact.Find(id);
+          return View(Contact);
         }
 
         [HttpPost("/contact/ClearContacts")]
@@ -26,8 +27,8 @@ namespace AddressBook.Controllers
           return View();
         }
 
-        [HttpPost("/contact/CreateContact")]
-        public ActionResult CreateContact()
+        [HttpPost("/contact/new")]
+        public ActionResult AddContacts()
         {
           Contact newContact = new Contact (
             Request.Form["new-contact"],
