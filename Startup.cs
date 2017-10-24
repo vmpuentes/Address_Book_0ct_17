@@ -12,7 +12,7 @@ namespace AddressBook
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddEnvironmentVariables();
-            Configuration = builder.Build();
+                Configuration = builder.Build();
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -24,6 +24,7 @@ namespace AddressBook
 
         public void Configure(IApplicationBuilder app)
         {
+            app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {

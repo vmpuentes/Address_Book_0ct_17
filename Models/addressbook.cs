@@ -23,35 +23,40 @@ namespace AddressBook.Models
       return _name;
     }
 
-    public void SetName(string newName)
-    {
-      _name = newName;
-    }
+    // public void SetName(string newName)
+    // {
+    //   _name = newName;
+    // }
 
     public string GetPhone()
     {
       return _phone;
     }
 
-    public void SetPhone(string newPhone)
-    {
-      _phone = newPhone;
-    }
+    // public void SetPhone(string newPhone)
+    // {
+    //   _phone = newPhone;
+    // }
 
     public string GetAddress()
     {
       return _address;
     }
 
-    public void SetAddress(string newAddress)
+    // public void SetAddress(string newAddress)
+    // {
+    //   _address = newAddress;
+    // }
+
+    public int GetId()
     {
-      _address = newAddress;
+      return _id;
     }
 
-    public void Save()
-    {
-      _contactList.Add(this);
-    }
+    // public void Save()
+    // {
+    //   _contactList.Add(this);
+    // }
 
     public static List<Contact> GetAll()
     {
