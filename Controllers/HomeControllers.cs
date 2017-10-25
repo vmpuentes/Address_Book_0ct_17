@@ -13,11 +13,12 @@ namespace AddressBook.Controllers
             return View(allContacts);
         }
 
-        // [Route("/contact/{id}")]
-        // public ActionResult ContactDetails(int id)
-        // {
-        //   Contact contact = Contact.Find(id);
-        //   return View(Contact);
+        [HttpGet("/contact/{id}")]
+        public ActionResult ContactDetails(int id)
+        {
+        Contact contact = Contact.Find(id);
+        return View(Contact);
+        }
 
         [HttpPost("/contact/new")]
         public ActionResult ContactDetails()

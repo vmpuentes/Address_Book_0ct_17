@@ -7,8 +7,10 @@ namespace AddressBook.Models
     private string _name;
     private string _phone;
     private string _address;
-    private static List<Contact> _contactList = new List <Contact> {};
     private int _id;
+
+    private static List<Contact> _contactList = new List <Contact> {};
+
     public Contact (string contactName, string phoneNumber , string contactAddress)
     {
        _name = contactName;
