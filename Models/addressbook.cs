@@ -65,6 +65,11 @@ namespace AddressBook.Models
       return _contactList;
     }
 
+    public static Contact Find(int searchId)
+    {
+      return _contactList[searchId-1];
+    }
+
     public static void ClearAll()
     {
       _contactList.Clear();

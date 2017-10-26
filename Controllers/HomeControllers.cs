@@ -13,11 +13,17 @@ namespace AddressBook.Controllers
             return View(allContacts);
         }
 
+        [HttpGet("/contact/AddContacts")]
+        public ActionResult AddContacts()
+        {
+          return View();
+        }
+
         [HttpGet("/contact/{id}")]
         public ActionResult ContactDetails(int id)
         {
         Contact contact = Contact.Find(id);
-        return View(Contact);
+        return View(contact);
         }
 
         [HttpPost("/contact/new")]
