@@ -9554,11 +9554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\swhit\\Desktop\\Address_Book_0ct_17\\addressbook.csproj",
+      "projectUniqueName": "C:\\Users\\swhit\\desktop\\Address_Book_0ct_17\\addressbook.csproj",
       "projectName": "addressbook",
-      "projectPath": "C:\\Users\\swhit\\Desktop\\Address_Book_0ct_17\\addressbook.csproj",
+      "projectPath": "C:\\Users\\swhit\\desktop\\Address_Book_0ct_17\\addressbook.csproj",
       "packagesPath": "C:\\Users\\swhit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\swhit\\Desktop\\Address_Book_0ct_17\\obj\\",
+      "outputPath": "C:\\Users\\swhit\\desktop\\Address_Book_0ct_17\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\swhit\\AppData\\Roaming\\NuGet\\NuGet.Config"

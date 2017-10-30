@@ -1,13 +1,24 @@
+
+.container {
+  background-color: #f2bd38;
+}
+
 .jumbotron {
-  color: red;
-  background-image: url("...wwwroot/img/52157165.jpeg");
-  background-position: center;
-  background-origin: border-box;
-  background-repeat: round;
+  color: #db533b;
+  background-image: url("../img/wc2.jpg");
+  background-position: bottom;
+  background-size: 100%;
+  background-color: #8bc78e;
+  background-repeat: space;
+  text-align: center;
 }
 
 h1 {
-  float: right;
   font-weight: bold;
-  color: blue;
+  color: #db533b;
+}
+
+#flowerbook {
+  height: 25%;
+  width: 25%;
 }

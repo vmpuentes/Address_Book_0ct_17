@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <meta charset="utf-8">
-  <title>AddressBook</title>
-</head>
+@{
+  Layout = "_Layout";
+}
 <body>
     <h1>Here are your contact details!</h1>
       <ul>
@@ -13,7 +8,10 @@
         <li>@Model.GetPhone()</li>
         <li>@Model.GetAddress()</li>
       </ul>
+    <div class="row">
       <a href='/contact/AddContacts'>Add Another Contact</a>
+    </div>
+    <div class="row">
       <a href='/'>Go to homepage</a>
-
+    </div>  
 </body>
