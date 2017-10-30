@@ -1,19 +1,17 @@
 @{
   Layout = "_Layout";
 }
-<form action="/contact/ClearContacts" method="post">
-  <h1>Address Book</h1>
-</div>
-<p><a href='/contact/AddContacts'>Add Contact</a></p>
+<h1><a href='/contact/AddContacts'>Add Contact</a></h1>
 <h1> Contact List </h1>
 <ul>
   @foreach(var contact in Model)
   {
-    <li><a href='/contact/@contact.GetId()'>@contact.GetName()</a></li>
+    <p><a href='/contact/@contact.GetId()'>@contact.GetName()</a></p>
   }
 </ul>
 <br>
-<button type="submit" name="button">Clear contacts created</button>
+<form action="/contact/ClearContacts" method="post">
+  <button type="submit" name="button">Clear contacts created</button>
 </div>
 </form>
 </body>

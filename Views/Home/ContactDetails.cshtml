@@ -1,17 +1,13 @@
 @{
   Layout = "_Layout";
 }
-<body>
-    <h1>Here are your contact details!</h1>
-      <ul>
-        <li>@Model.GetName()</li>
-        <li>@Model.GetPhone()</li>
-        <li>@Model.GetAddress()</li>
-      </ul>
-    <div class="row">
-      <a href='/contact/AddContacts'>Add Another Contact</a>
-    </div>
-    <div class="row">
-      <a href='/'>Go to homepage</a>
-    </div>  
-</body>
+<h1>Here are your contact details!</h1>
+  <p>@Model.GetName()</p>
+  <p>@Model.GetPhone()</p>
+  <p>@Model.GetAddress()</p>
+<div class="row">
+  <a href='/contact/AddContacts'>Add Another Contact</a>
+</div>
+<div class="row">
+  <a href='/'>Go to homepage</a>
+</div>

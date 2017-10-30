@@ -31,9 +31,8 @@ namespace AddressBook.Controllers
         {
           Contact newContact = new Contact (
             Request.Form["new-contact"],
-            (Request.Form["new-contactPhoneNumber"]),
-            (Request.Form["new-address"])
-          );
+            Request.Form["new-phone-number"],
+            Request.Form["new-address"]);
           return View(newContact);
         }
 

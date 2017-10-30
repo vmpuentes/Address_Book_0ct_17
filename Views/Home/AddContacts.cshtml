@@ -1,25 +1,20 @@
 @{
   Layout = "_Layout";
 }
-
-<div class="jumbotron">
-  <h1>Address Book User Form </h1>
-</div>
-<div class="container">
-  <form action="/contact/new" method="post">
-    <div class="col-md-3">
-      <label for="new-contact">Add a new contact</label>
-      <input id="new-contact" name="new-contact" type="text">
-    </div>
-    <div class="col-md-3">
-      <label for="new-phone-number">Add contact's phone number</label>
-      <input id="new-phone-number" name="new-phone-number" type="text">
-    </div>
-    <div class="col-md-3">
-      <label for="new-address">Add contact's address</label>
-      <input id="new-address" name="new-address" type="text">
-    </div>
-  <div class="row">
-  <button type="submit">Submit</button>
-</div>
+<form action="/contact/new" method="post">
+  <div class="col-md-3">
+    <label for="new-contact">Add a new contact</label>
+    <input id="new-contact" name="new-contact" type="text">
+  </div>
+  <div class="col-md-3">
+    <label for="new-phone-number">Add contact's phone number</label>
+    <input id="new-phone-number" name="new-phone-number" type="text">
+  </div>
+  <div class="col-md-3">
+    <label for="new-address">Add contact's address</label>
+    <input id="new-address" name="new-address" type="text">
+  </div>
+  <div class="col-md-3">
+    <button type="submit">Submit</button>
+  </div>
 </form>
